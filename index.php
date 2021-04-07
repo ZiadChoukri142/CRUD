@@ -9,16 +9,21 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form action="" method="POST">
+<?php require_once 'process.php'; ?>
+<div class="row justify-content-center">
+    <form action="process.php" method="POST">
         <div class="form-group">
             <label>Name</label>
-            <input type="text" name="name" value="Enter your name">
+            <input type="text" name="name" class="form-control" value="Enter your name">
         </div>
         <div class="form-group">
             <label>Location</label>
-            <input type="text" name="location" value="Enter your location">
+            <input type="text" name="location" class="form-control" value="Enter your location">
         </div>
-    <button type="submit" name="save">Save</button>
+        <div class="from-group">
+            <button type="submit" class="btn btn-primary" name="save">Save</button>
+        </div>
+</div>
     </form>
 </body>
 </html>
